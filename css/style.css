@@ -69,8 +69,9 @@ button i {
   color: #fc9406;
   font-size: 22px;
 }
-#dot p {
+#dot {
   font-size: 35px;
+  padding-bottom: 20px;
 }
 #clr,
 #undo i,
@@ -152,5 +153,43 @@ button {
 @media (max-width: 1000px) {
   .switch_frame {
     display: none;
+  }
+  @media (max-width: 480px) {
+    .calc-body {
+      height: 400px;
+    }
+    .buttons {
+      width: 90%;
+    }
+    .btun {
+      height: 48px;
+      margin: 5px 8px;
+    }
+    #zero {
+      width: 120px;
+      height: 48px;
+      margin-right: 3px;
+      margin-left: 10px;
+    }
+    #result {
+      font-size: 28px;
+      margin-right: 5px;
+    }
+    #input {
+      margin-right: 5px;
+      padding-top: 0;
+      font-size: 25px;
+    }
+    button i {
+      color: #fc9406;
+      font-size: 20px;
+    }
+    button {
+      font-size: 24px;
+    }
+    #dot {
+      font-size: 35px;
+      padding-bottom: 0px;
+    }
   }
 }
