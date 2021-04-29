@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #ecf0f3;
+}
+.row {
+  height: 100vh;
+}
+.calc-body {
+  height: 550px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  position: relative;
+  box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
+}
+#input {
+  font-weight: 600;
+  font-size: 26px;
+  text-align: right;
+  margin: 0 20px 0;
+  padding-top: 4px;
+  color: rgba(153, 153, 153, 0.664);
+  overflow: hidden;
+}
+#result {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: right;
+  margin-right: 35px;
+  margin-left: 15px;
+  padding-top: 0;
+  overflow: hidden;
+}
+.btun {
+  margin: 6px 15px;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 30%;
+  box-shadow: 0 0 2px #dfdfdf, 0 0 5px #ecf0f3, 8px 8px 15px #7c7f838f,
+    -8px -8px 15px #ffffff;
+  background: #ecf0f3;
+}
+.btun:active {
+  box-shadow: 0 0 2px #dfdfdf, 0 0 5px #ecf0f3, 8px 8px 12px #b4b5b88f,
+    -8px -8px 15px #ffffff;
+  background: #e8ecee;
+}
+.buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#zero {
+  width: 160px;
+  height: 70px;
+  border-radius: 15px;
+  margin: 6px 22px;
+}
+button i {
+  color: #fc9406;
+  font-size: 22px;
+}
+#dot p {
+  font-size: 35px;
+}
+#clr,
+#undo i,
+#square-root i {
+  color: rgb(138, 138, 138) !important;
+}
+.light_color {
+  color: rgba(202, 202, 202, 0.521);
+}
+button {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Switch button style */
+.switch_frame {
+  position: absolute;
+  width: 120px;
+  height: 53.79px;
+  top: 45px;
+  right: 90px;
+  background: #ecf0f3;
+  box-shadow: inset -3.0836px -3.0836px 5.13934px #ffffff,
+    inset 3.0836px 3.0836px 5.13934px#9d9fa58f;
+  border-radius: 51.3934px;
+}
+.switch_btn {
+  border: none;
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  left: 10px;
+  top: 9px;
+  background: #ecf0f3;
+  box-shadow: 0 0 1px #dfdfdf, 0 0 4px #ecf0f3, 4px 4px 10px #7c7f838f,
+    -4px -4px 10px #ffffff;
+  border-radius: 46.25px;
+  transition: left 0.3s ease-out;
+}
+.switch_frame img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 4px;
+}
+
+/* Switch from light to dark classes */
+.switchBtnDark {
+  left: 70px;
+  background: #27313d;
+  box-shadow: rgb(14 14 14 / 74%) 4px 4px 10px,
+    rgb(92 92 100 / 57%) -4px -4px 10px;
+}
+
+.darkCalcBtn {
+  background: #27313d;
+  color: #bdbdbd;
+  box-shadow: 4px 4px 10px rgb(14 14 14 / 74%),
+    -4px -4px 10px rgba(92, 92, 100, 0.574);
+}
+.darkCalcBtn:active {
+  background: #252e3a;
+  box-shadow: 4px 4px 10px rgb(14 14 14 / 50%),
+    -4px -4px 10px rgba(85, 85, 94, 0.574);
+}
+
+.calcBodyDark {
+  background: #27313d;
+  box-shadow: 4px 4px 10px rgb(14 14 14 / 74%),
+    -4px -4px 10px rgba(92, 92, 100, 0.574);
+}
+.switchBtnFrame {
+  background: #27313d;
+  box-shadow: inset -3.0836px -3.0836px 5.13934px #3b4a5b,
+    inset 3.0836px 3.0836px 5.13934px #1f262e;
+}
+
+/* media query*/
+@media (max-width: 1000px) {
+  .switch_frame {
+    display: none;
+  }
+}
