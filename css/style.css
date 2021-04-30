@@ -17,10 +17,10 @@ body {
   padding: 10px 25px 10px 25px;
   border-radius: 40px;
   background: #ecf0f3;
-  position: relative;
   box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
 }
 #input {
+  min-height: 43px;
   font-weight: 600;
   font-size: 26px;
   text-align: right;
@@ -30,8 +30,9 @@ body {
   overflow: hidden;
 }
 #result {
+  min-height: 60px;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 40px;
   text-align: right;
   margin-right: 35px;
   margin-left: 15px;
@@ -54,16 +55,13 @@ body {
   background: #e8ecee;
 }
 .buttons {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: auto;
 }
 #zero {
   width: 160px;
-  height: 70px;
   border-radius: 15px;
-  margin: 6px 22px;
+  margin-left: 28px;
+  margin-right: 26px;
 }
 button i {
   color: #fc9406;
@@ -154,42 +152,34 @@ button {
   .switch_frame {
     display: none;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     .calc-body {
-      height: 400px;
-    }
-    .buttons {
-      width: 90%;
+      height: 500px;
     }
     .btun {
-      height: 48px;
+      height: 60px;
       margin: 5px 8px;
     }
     #zero {
-      width: 120px;
-      height: 48px;
-      margin-right: 3px;
       margin-left: 10px;
+      margin-right: 10px;
     }
-    #result {
-      font-size: 28px;
-      margin-right: 5px;
+  }
+  @media (max-width: 400px) {
+    .calc-body {
+      height: 400px;
+    }
+    .btun {
+      height: 45px;
+      margin: 5px 8px;
     }
     #input {
-      margin-right: 5px;
-      padding-top: 0;
-      font-size: 25px;
-    }
-    button i {
-      color: #fc9406;
+      min-height: 34px;
       font-size: 20px;
     }
-    button {
-      font-size: 24px;
-    }
-    #dot {
-      font-size: 35px;
-      padding-bottom: 0px;
+    #result {
+      min-height: 45px;
+      font-size: 30px;
     }
   }
 }
